@@ -52,7 +52,6 @@ module DiceGame
       points = 0
       r = Random.new
       (1..@qty).each {|x|points += r.rand(1..@edges)}
-#      p points
       p "Wheel of fortune throws: #{points}"
       @users.each do |user|
         # p "User #{user.name} score #{user.score}"
